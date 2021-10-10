@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto de pestañas en Vanilla JavaScript</title>
     <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body class="container">
-    <header class="main-header">
-        <h1 class="title">
-            Sobre mí
-        </h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut quam in quae doloribus!
-        </p>
-    </header>
+    <main class="about-container">
+        <header class="about-header">
+            <h1 class="title">
+                Sobre mí
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut quam in quae doloribus!
+            </p>
+        </header>
+        <img class="about-image" srcset="http://placekitten.com/320/100 320w,
+                     http://placekitten.com/480/200 480w,
+                     http://placekitten.com/800/400 890w" src="http://placekitten.com/800/400" alt="Gatitos">
+        <div class="about-content">
+            <div class="tabs-container">
+                <button data-id="b1" class="tab-item active">Historia</button>
+                <button data-id="b2" class="tab-item">Visión</button>
+                <button data-id="b3" class="tab-item">Goals</button>
+            </div>
+            <div class="about-target">
+                <div id="b1" class="active">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati explicabo numquam recusandae
+                    laudantium dicta illo accusamus, perspiciatis ex cum doloremque earum quod consequatur enim
+                    blanditiis quam cumque repellat laboriosam officiis.</div>
+                <div id="b2">Lala</div>
+                <div id="b3">Xurxo.</div>
+            </div>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
 </body>
+
 </html>
